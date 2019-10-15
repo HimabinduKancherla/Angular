@@ -1,0 +1,15 @@
+<table>
+    <tr>
+      <th *ngFor="let col of columns">
+        {{col}}
+      </th>
+    </tr>
+    <tr *ngFor="let char of characters">
+      <td *ngFor="let col of columns">
+        {{char[col]}}
+      </td>
+      <td><a [routerLink]="['/User/View', char.id]">View </a> </td>
+      <td>  <button [routerLink]="['/User/Open', char.id]">Edit</button></td>
+    </tr>
+  </table>
+<a routerLink ="/User/New">Add user-list </a>

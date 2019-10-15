@@ -1,0 +1,11 @@
+<table>
+ 
+<div *ngFor="let char of UserDetails">
+    <tr *ngFor="let col of columns">
+        <td>{{col}}:</td>
+        <td> {{char[col]}}</td>
+     
+    </tr>
+  </div>
+  </table>
+  <a routerLink ="/User/List">User-list </a>
